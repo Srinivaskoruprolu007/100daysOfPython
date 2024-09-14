@@ -1,16 +1,17 @@
+# List of stages for the hangman game, representing different states of the hangman figure
 stages = ['''
   +---+
   |   |
   O   |
- /|\  |
- / \  |
+ /|\\  |
+ / \\  |
       |
 =========
 ''', '''
   +---+
   |   |
   O   |
- /|\  |
+ /|\\  |
  /    |
       |
 =========
@@ -18,7 +19,7 @@ stages = ['''
   +---+
   |   |
   O   |
- /|\  |
+ /|\\  |
       |
       |
 =========
@@ -29,7 +30,8 @@ stages = ['''
  /|   |
       |
       |
-=========''', '''
+=========
+''', '''
   +---+
   |   |
   O   |
@@ -55,6 +57,7 @@ stages = ['''
 =========
 ''']
 
+# ASCII art logo or text graphic for the game introduction
 logo = ''' 
  _                                             
 | |                                            
@@ -64,5 +67,3 @@ logo = '''
 |_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
                     __/ |                      
                    |___/    '''
-
-
