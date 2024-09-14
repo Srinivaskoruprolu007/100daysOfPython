@@ -1,19 +1,30 @@
 def prime_checker(number: int):
-    isprime = True
+    """
+    Checks if a number is prime and prints the result.
+    
+    Parameters:
+    number (int): The number to check.
+    """
+    # Edge cases
     if number < 2:
-        isprime = False
+        print(f"{number} is not a prime number")
+        return
     if number == 2:
-        isprime = True
-    for i in range(3, number):
+        print(f"{number} is a prime number")
+        return
+    
+    # Check for factors from 2 up to the square root of the number
+    is_prime = True
+    for i in range(2, int(number**0.5) + 1):
         if number % i == 0:
-            isprime = False
-        else:
-            isprime = True
-    if isprime:
+            is_prime = False
+            break
+    
+    if is_prime:
         print(f"{number} is a prime number")
     else:
         print(f"{number} is not a prime number")
 
-
-num = int(input("Enter a number to check : "))
+# Example usage
+num = int(input("Enter a number to check: "))
 prime_checker(num)
